@@ -64,7 +64,7 @@ fi
 shopt -s expand_aliases
 
 [[ "$HUNSPELL" = "" ]] && HUNSPELL="$(dirname $0)"/../src/tools/hunspell
-[[ "$ANALYZE" = "" ]] && ANALYZE="$(dirname $0)"/../src/tools/analyze
+[[ "$ANALYZE" = "" ]] && ANALYZE="$(dirname $0)"/../src/tools/hunspell-analyze
 [[ "$LIBTOOL" = "" ]] && LIBTOOL="$(dirname $0)"/../libtool
 libtool=($LIBTOOL)
 alias hunspell='"${libtool[@]}" --mode=execute "$HUNSPELL"'

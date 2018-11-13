@@ -12,7 +12,7 @@ gh1058_LDADD = $(top_builddir)/src/hunspell/libhunspell-1.7.la
 
 TEST_EXTENSIONS = .dic
 AM_TESTS_ENVIRONMENT = export HUNSPELL=$(top_builddir)/src/tools/hunspell; \
-                       export ANALYZE=$(top_builddir)/src/tools/analyze; \
+                       export ANALYZE=$(top_builddir)/src/tools/hunspell-analyze; \
                        export LIBTOOL="$(LIBTOOL)";
 DIC_LOG_COMPILER = $(top_srcdir)/tests/test.sh
 
